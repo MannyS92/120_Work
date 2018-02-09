@@ -6,3 +6,6 @@ This HW Cycle, I followed along with the lesson, and that is what I am turning i
 
 I took an interactive media class where we learned processing, but that was a while ago and I dont quite remember everything, so this class is reminding me of that stuff and Im having so much fun!
 There wernt any questions on  Github that I was an
+
+Preview of Hellow World Sketch
+![Screenshot](screenshot-hw3.png)
