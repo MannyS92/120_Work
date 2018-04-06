@@ -5,12 +5,10 @@ let speed = 1;
 
 var r, g, b;
 
-
-
-
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
+
   drawCircle();
   frameRate(50);
   r = random(255);
@@ -31,6 +29,11 @@ function draw() {
 
 
 
+  if ( mouseIsPressed ) {
+fill(150,g,b);
+apoc();
+
+  }
 
 
   if ( x > 200 || x < -200 ) {
@@ -45,11 +48,8 @@ function draw() {
   a = a + 0.1;
 
 
-  if ( mouseIsPressed ) {
-fill(150,g,b);
-apoc();
 
-  }
+
 
 
 
@@ -60,15 +60,15 @@ function drawCircle() {
   noFill();
   for (let i = 0; i < 20; i++) {
         // draw an ellipse
-    ellipse(x, 0, hypno[i],hypno[i]+5);
+    ellipse(0, 0, hypno[i],hypno[i]+5);
     }
 }
 
 function apoc() {
 
-  for (let i = 0; i < 300; i++) {
+  for (let i = 0; i < 100; i++) {
         // draw an ellipse
-    //fill(r,g,b);
+    fill(r,g,b);
     ellipse(mouseX,mouseY,i,i);
   }
 }
