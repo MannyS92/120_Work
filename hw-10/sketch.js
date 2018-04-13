@@ -9,6 +9,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   drawCircle();
   frameRate(50);
+  //setting random color
   r = random(255);
   g = random(255);
   b = random(255);
