@@ -10,7 +10,10 @@ function setup() {
 
 //the candy
         candies[i]= new candy(x,200,20);
-        let d = new candy(x,100,20);
+//having trouble adding another row.Below are my ideas that arnt working
+        //let d = new candy(x,100,20);
+        //candies[i]= new candy(x,100,20);
+        //candy(x,100,20);
   }
 }
 
