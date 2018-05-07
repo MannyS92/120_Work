@@ -1,5 +1,4 @@
 function Snake() {
-//snake properties
   this.x = 0;
   this.y = 0;
   this.xspeed = 1;
@@ -11,7 +10,7 @@ function Snake() {
     this.xspeed = x;
     this.yspeed = y;
     }
-//defining eating
+
     this.eat = function(pos) {
       var d = dist(this.x, this.y, pos.x, pos.y);
       if (d < 1) {
@@ -22,7 +21,7 @@ function Snake() {
       }
       }
 
-//defining death
+
       this.death = function() {
         for (var i = 0; i < this.tail.length; i++) {
           var pos =this.tail[i];
@@ -35,7 +34,7 @@ function Snake() {
         }
       }
 
-//update function so that it can properly adding length to snail
+
   this.update = function() {
     for (var i = 0; i < this.tail.length-1; i++){
       this.tail[i] = this.tail[i+1];
@@ -52,10 +51,10 @@ function Snake() {
     this.y = constrain(this.y, 0, height-scl);
   }
 
-//display function of the snake
+
   this.show = function() {
-    noStroke();
     fill('orange');
+    noStroke();
     for (var i = 0; i < this.tail.length; i++) {
           rect(this.tail[i].x, this.tail[i].y, scl, scl);
     }
