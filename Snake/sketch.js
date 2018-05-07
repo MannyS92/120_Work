@@ -2,6 +2,13 @@ var s;
 var scl = 20;
 var food;
 
+let img;
+
+function preload() {
+    img = loadImage('./images/grass.jpg');
+}
+
+
 function setup() {
   createCanvas(600, 600);
   s = new Snake();
@@ -9,6 +16,7 @@ function setup() {
   pickLocation();
 
 }
+//function
 
 
 function pickLocation() {
@@ -21,7 +29,7 @@ function pickLocation() {
 
 function draw() {
 
-  background(51);
+  background(img);
 
 
     if (s.eat(food)) {
