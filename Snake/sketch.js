@@ -2,7 +2,7 @@ var s;
 var scl = 20;
 var food;
 
-let img;
+var img;
 
 function preload() {
     img = loadImage('./images/grass.jpg');
@@ -27,9 +27,13 @@ function pickLocation() {
   food.mult(scl);
 }
 
+
+
 function draw() {
 
   background(img);
+
+  image( img, 10, 10, 50, 500 );
 
 
     if (s.eat(food)) {
