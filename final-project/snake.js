@@ -27,9 +27,9 @@ function Snake() {
           var pos =this.tail[i];
           var d = dist(this.x, this.y, pos.x, pos.y);
           if (d < 1) {
-            console.log('starting over')
             this.total = 0;
             this.tail = [];
+            Score = 0;
           }
         }
       }
@@ -53,9 +53,9 @@ function Snake() {
 
 
   this.show = function() {
-    fill(255);
+    fill('orange');
     for (var i = 0; i < this.tail.length; i++) {
-      rect(this.tail[i].x, this.tail[i].y, scl, scl);
+          rect(this.tail[i].x, this.tail[i].y, scl, scl);
     }
     rect(this.x, this.y, scl, scl);
 }
